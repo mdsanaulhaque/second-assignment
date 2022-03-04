@@ -38,8 +38,8 @@ body{
     width: 168px;
     height: 44px;
     color: #FFFFFF;
-    background: #E02C6D;
-    border-radius: 5px;
+    background:fuchsia;
+    border-radius: 10px;
   }
   .btn a{
       text-decoration: none;
@@ -76,7 +76,7 @@ body{
     margin: 0 100px 120px;
   }
   .services-title{
-    color: #E02C6D;
+    color: #4bdde7;
     text-align: center;
     font-size: 50px;
   }
@@ -131,4 +131,45 @@ footer img{
 .fab{
   margin: 10px;
   padding: 0 5px;
+}
+
+/* Responsive section start here */
+
+@media only screen and (max-width: 600px) {
+  .banner{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .banner img{
+    width: 100%;
+    margin: 0px;
+  }
+
+  .players{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+  .registration-form{
+    display: flex;
+    flex-direction: column;
+  }
+  .reg-thumbnail{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+  input{
+    width: 100%;
+    margin: 0px;
+  }
 }
