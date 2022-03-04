@@ -1,0 +1,134 @@
+body{
+    /* google font used here  */
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Redressed', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*-----------------
+ Top banner Styles 
+  ---------------- */
+  .banner{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #2D25A0;
+      padding: 85px 0;
+  }
+  .banner-detail{
+      margin-left: 156px;
+      margin-right: 102px;
+  }
+
+  .banner-detail h1{
+    font-size: 50px;
+    line-height: 30px;
+    color: #FFFFFF;
+  }
+  .banner-thumbnail{
+      margin-right: 140px;
+  }
+  .banner-thumbnail img{
+    width: 556.01px;
+    height: 438px;
+  }
+  .btn{
+    width: 168px;
+    height: 44px;
+    color: #FFFFFF;
+    background: #E02C6D;
+    border-radius: 5px;
+  }
+  .btn a{
+      text-decoration: none;
+      color: #FFFFFF;
+  }
+  .btn:hover{
+      border: 2px solid #FFFFFF;
+  }
+
+  /*-------------
+  Players Styles 
+  ----------------*/
+
+  .players{
+      margin: 70px 210px 165px 100px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-row-gap: 30px;
+      grid-column-gap: 27px;
+  }
+  .player{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+      padding: 15px;
+  }
+
+  .player img{
+    width: 300px;
+    height: 256px
+  }
+  /* Services Styles  */
+  .services{
+    display: flex;
+    margin: 0 100px 120px;
+  }
+  .services-title{
+    color: #E02C6D;
+    text-align: center;
+    font-size: 50px;
+  }
+  .service{
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color: #e4e3f0;
+    border-radius: 5px;
+  }
+
+  .service h2{
+    font-size: 50px;
+  }
+
+/* Registration Part Styles */
+.registration-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.reg-thumbnail{
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin-right: 50px;
+}
+.reg-detail{
+  margin-left: 50px;
+}
+.reg-detail input{
+  padding: 10px 20px;
+  width: 100%;
+  border: 2px solid lightblue;
+}
+.reg-detail h2{
+  color: lightskyblue;
+}
+
+
+/* Footer Styles  */
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img{
+  width: 483.87px;
+  height: 110px;
+}
+.fab{
+  margin: 10px;
+  padding: 0 5px;
+}
