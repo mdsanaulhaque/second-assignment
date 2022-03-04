@@ -7,6 +7,25 @@ body{
     font-family: 'Roboto Slab', serif;
 }
 
+/*------------
+ Common Style 
+ -------------*/
+ .btn{
+  width: 168px;
+  height: 44px;
+  color: #FFFFFF;
+  background:#1f1ff1;
+  border-radius: 5px;
+}
+.btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.btn:hover{
+    border: 2px solid #FFFFFF;
+}
+
+
 /*-----------------
  Top banner Styles 
   ---------------- */
@@ -34,20 +53,6 @@ body{
     width: 556.01px;
     height: 438px;
   }
-  .btn{
-    width: 168px;
-    height: 44px;
-    color: #FFFFFF;
-    background:fuchsia;
-    border-radius: 10px;
-  }
-  .btn a{
-      text-decoration: none;
-      color: #FFFFFF;
-  }
-  .btn:hover{
-      border: 2px solid #FFFFFF;
-  }
 
   /*-------------
   Players Styles 
@@ -70,13 +75,17 @@ body{
     width: 300px;
     height: 256px
   }
-  /* Services Styles  */
+
+  /* ------------------
+  Services Styles start  
+  -------------------- */
+
   .services{
     display: flex;
     margin: 0 100px 120px;
   }
   .services-title{
-    color: #4bdde7;
+    color: #1f1ff1;
     text-align: center;
     font-size: 50px;
   }
@@ -91,8 +100,12 @@ body{
   .service h2{
     font-size: 50px;
   }
+  /* Services style end here */
 
-/* Registration Part Styles */
+
+/* ----------------------
+Registration Part Styles 
+-------------------------*/
 .registration-form{
   display: flex;
   justify-content: center;
@@ -114,9 +127,12 @@ body{
 .reg-detail h2{
   color: lightskyblue;
 }
+/* Registretion style end here */
 
 
-/* Footer Styles  */
+/* ------------
+Footer Styles  
+--------------*/
 .footer{
   display: flex;
   flex-direction: column;
@@ -132,32 +148,48 @@ footer img{
   margin: 10px;
   padding: 0 5px;
 }
+/* Footer style end here */
 
-/* Responsive section start here */
+
+
+/* ---------------------------
+Responsive section start here 
+------------------------------*/
 
 @media only screen and (max-width: 600px) {
+  /* top banner section  */
   .banner{
     display: flex;
     flex-direction: column;
     margin: 0px;
     padding: 0px;
   }
+  .banner-detail{
+    margin: 0px;
+  }
+  .banner h1{
+    line-height: 80px;
+  }
   
-  .banner img{
+  .banner-thumbnail img{
     width: 100%;
     margin: 0px;
   }
 
+  /* Players section  */
   .players{
     display: grid;
     grid-template-columns: 1fr;
     margin: 0;
   }
 
+  /* services section  */
   .services{
     display: flex;
     flex-direction: column;
   }
+
+  /* registetion section  */
   .registration-form{
     display: flex;
     flex-direction: column;
@@ -165,11 +197,13 @@ footer img{
   .reg-thumbnail{
     margin: 0;
   }
-  img{
-    width: 100%;
-  }
   input{
     width: 100%;
     margin: 0px;
   }
+  /* footer section  */
+  .footer img{
+    width: 100%;
+  }
+  
 }
